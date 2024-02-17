@@ -4,6 +4,7 @@ version = "1.0.10"
 aliucord.changelog.set("""
   # 1.0.10
   * just modded the plugin so it hyperlinks emotes to work with other platforms.
+  * now requires MoreHighlight so that the hyperlinks work
   # 1.0.9
   * Removed the troll and made NitroSpoof work again
   * Thanks to Lenk for helping me with the code
