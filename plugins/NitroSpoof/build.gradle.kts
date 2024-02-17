@@ -1,7 +1,9 @@
-description = "Use all emotes in any server without Nitro."
-version = "1.0.9"
+description = "(requires MoreHighlight to hide the hyperlink) Nitrospoof: Now with hyperlinked emojis like other spoofs."
+version = "1.0.10"
 
 aliucord.changelog.set("""
+  # 1.0.10
+  * just modded the plugin so it hyperlinks emotes to work with other platforms.
   # 1.0.9
   * Removed the troll and made NitroSpoof work again
   * Thanks to Lenk for helping me with the code
