@@ -7,3 +7,4 @@ File(rootDir.path + "/plugins")
         include(":$pluginName")
         project(":$pluginName").projectDir = plugin
     }
+include(":app")
