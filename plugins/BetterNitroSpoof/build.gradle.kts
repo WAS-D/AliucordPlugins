@@ -1,5 +1,5 @@
 description = "(requires MoreHighlight to hide the hyperlink) Nitrospoof: Now with hyperlinked emojis like other spoofs."
-version = "1.0.10"
+version = "1.0.11"
 
 aliucord.changelog.set("""
   # 1.0.10
