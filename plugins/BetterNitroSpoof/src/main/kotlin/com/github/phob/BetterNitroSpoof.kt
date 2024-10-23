@@ -52,8 +52,9 @@ class BetterNitroSpoof : Plugin() {
     private fun getChatReplacement(callFrame: XC_MethodHook.MethodHookParam) {
         val thisObject = callFrame.thisObject as ModelEmojiCustom
         val isUsable = thisObject.getCachedField<Boolean>("isUsable")
+        val available = thisObject.getCachedField<Boolean>("available")
 
-        if (isUsable) {
+        if (isUsable && available)  {
             callFrame.result = callFrame.result
             return
         }
@@ -67,7 +68,7 @@ class BetterNitroSpoof : Plugin() {
         finalUrl += idStr
         val emoteSize = settings.getString(EMOTE_SIZE_KEY, EMOTE_SIZE_DEFAULT).toIntOrNull()
 
-        finalUrl += (if (isAnimated) ".gif" else ".png") + "?quality=lossless"
+        finalUrl += (if (isAnimated) ".gif" else ".png") + "?quality=lossless&name=" + emoteName
 
         if (emoteSize != null) {
             finalUrl += "&size=${emoteSize}"
